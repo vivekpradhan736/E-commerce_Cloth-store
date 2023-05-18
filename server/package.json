@@ -1,12 +1,15 @@
 {
   "name": "server",
+  "homepage": "https://vivekpradhan736.github.io/React-E-commerce",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "develop": "strapi develop",
     "start": "strapi start",
-    "build": "strapi build",
+    "build": "npm i",
     "strapi": "strapi"
   },
   "dependencies": {
